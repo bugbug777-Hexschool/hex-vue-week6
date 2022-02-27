@@ -1,19 +1,25 @@
 <template>
   <div class="container | p-3 pt-5">
-    <form>
+    <form @submit.prevent="login">
       <div class="row justify-content-center">
         <div class="col-4">
           <h1 class="text-center">使用者請登入</h1>
           <div class="mb-3">
             <label for="email" class="d-block"
               ><span class="fs-5 | mb-1">帳號</span>
-              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" />
+              <input
+                v-model="user.username"
+                type="email"
+                class="form-control"
+                id="email"
+                aria-describedby="emailHelp"
+              />
             </label>
           </div>
           <div class="mb-3">
             <label for="password" class="d-block"
               ><span class="fs-5 | mb-1">密碼</span>
-              <input type="password" class="form-control" id="password" />
+              <input v-model="user.password" type="password" class="form-control" id="password" />
             </label>
           </div>
           <div class="text-end">
@@ -24,3 +30,29 @@
     </form>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      user: {
+        username: '',
+        password: '',
+      },
+    };
+  },
+  methods: {
+    login() {
+      const api = `${process.env.VUE_APP_BASE}/v2/admin/signin`;
+      this.$http
+        .post(api, this.user)
+        .then((res) => {
+          console.log(res);
+        })
+        .catch((err) => {
+          console.log(err.response);
+        });
+    },
+  },
+};
+</script>
