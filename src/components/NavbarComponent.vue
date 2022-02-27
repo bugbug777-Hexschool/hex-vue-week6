@@ -19,7 +19,7 @@
             <router-link to="/" class="nav-link active" aria-current="page">首頁</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/admin" class="nav-link">後台</router-link>
+            <router-link to="/admin/products" class="nav-link">後台產品列表</router-link>
           </li>
           <li class="nav-item">
             <router-link to="/login" class="nav-link">登入</router-link>
