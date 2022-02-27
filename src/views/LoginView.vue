@@ -47,7 +47,11 @@ export default {
       this.$http
         .post(api, this.user)
         .then((res) => {
-          console.log(res);
+          const { token, expired } = res.data;
+          document.cookie = `hexToken=${token}; expires=${new Date(
+            expired,
+          )}; SameSite=None; Secure`;
+          this.$router.replace('/admin/products');
         })
         .catch((err) => {
           console.log(err.response);
