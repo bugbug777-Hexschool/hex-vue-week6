@@ -1,10 +1,9 @@
 <template>
-  <button type="button" class="btn btn-primary">Sure</button>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/admin">Dashboard</router-link>
   </nav>
-  <router-view/>
+  <router-view />
 </template>
 
 <style lang="scss">
