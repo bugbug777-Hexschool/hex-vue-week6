@@ -14,12 +14,12 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav mb-2 mb-lg-0 w-100">
           <li class="nav-item">
             <router-link to="/" class="nav-link active" aria-current="page">首頁</router-link>
           </li>
-          <li class="nav-item">
-            <router-link to="/admin" class="nav-link">後台</router-link>
+          <li class="nav-item me-auto">
+            <router-link to="/admin/products" class="nav-link">後台產品列表</router-link>
           </li>
           <li class="nav-item">
             <router-link to="/login" class="nav-link">登入</router-link>
