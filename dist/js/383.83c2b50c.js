@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkhex_vue_week6"]=self["webpackChunkhex_vue_week6"]||[]).push([[383],{8383:function(e,n,u){u.r(n),u.d(n,{default:function(){return k}});var r=u(3396);const t={class:"container"},c=(0,r._)("h1",null,"購物車",-1),s=[c];function a(e,n){return(0,r.wg)(),(0,r.iD)("div",t,s)}var i=u(89);const f={},h=(0,i.Z)(f,[["render",a]]);var k=h}}]);
-//# sourceMappingURL=383.83c2b50c.js.map
