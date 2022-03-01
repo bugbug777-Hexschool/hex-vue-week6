@@ -1,7 +1,7 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Vue Router</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -17,6 +17,9 @@
         <ul class="navbar-nav mb-2 mb-lg-0 w-100">
           <li class="nav-item">
             <router-link to="/" class="nav-link active" aria-current="page">首頁</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/cart" class="nav-link">購物車</router-link>
           </li>
           <li class="nav-item me-auto">
             <router-link to="/admin/products" class="nav-link">後台產品列表</router-link>
