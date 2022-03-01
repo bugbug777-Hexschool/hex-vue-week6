@@ -1,6 +1,6 @@
 <template>
   <Navbar />
-  <div>Front</div>
+  <router-view />
 </template>
 
 <script>

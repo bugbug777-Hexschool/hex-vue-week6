@@ -1,7 +1,7 @@
 <template>
-  <nav class="navbar | bg-dark">
+  <nav class="navbar navbar-dark bg-dark">
     <div class="container">
-      <ul class="nav w-100">
+      <ul class="navbar-nav flex-row w-100">
         <li class="nav-item me-auto">
           <router-link class="nav-link" to="/">回到首頁</router-link>
         </li>
