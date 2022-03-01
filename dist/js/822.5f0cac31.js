@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkhex_vue_week6"]=self["webpackChunkhex_vue_week6"]||[]).push([[822],{4822:function(e,n,u){u.r(n),u.d(n,{default:function(){return i}});var r=u(3396);function t(e,n){return(0,r.wg)(),(0,r.iD)("div",null,"後台產品列表")}var c=u(89);const a={},f=(0,c.Z)(a,[["render",t]]);var i=f}}]);
+//# sourceMappingURL=822.5f0cac31.js.map
